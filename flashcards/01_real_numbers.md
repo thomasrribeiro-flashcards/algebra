@@ -8,8 +8,8 @@ tags = ["math", "algebra", "real-numbers", "order", "absolute-value", "number-li
 
 ## 1.1 Why Start With the Real Numbers
 
-Q: Why does algebra begin with a careful look at the real number system?
-A: Because every symbol, equation, and function you write in algebra ultimately represents or operates on real numbers. Before manipulating symbols, you need to know what kinds of numbers exist, how they are ordered, and which rules they obey. Rushing into equations without understanding the underlying number system leads to silent errors — for example, dividing by zero, taking square roots of negatives, or confusing "is less than" with "has smaller absolute value."
+Q: Why does algebra begin with the real number system?
+A: Every algebraic symbol ultimately represents a real number. Knowing what kinds exist, how they're ordered, and what rules they obey prevents silent errors (e.g., dividing by zero, square-rooting a negative).
 
 ## 1.2 Natural Numbers
 
@@ -38,6 +38,9 @@ A: Because some equations with rational coefficients have no rational solutions:
 ## 1.5 Irrational Numbers
 
 C: An [irrational number] is a real number that cannot be written as $p/q$ for integers $p, q$ with $q\neq 0$; examples include $\sqrt{2}$, $\pi$, and $e$.
+
+Q: Before we prove $\sqrt{2}$ is irrational, predict: what proof technique fits "no integers $p, q$ with $p^2 = 2q^2$"?
+A: Proof by contradiction — assume $\sqrt{2} = p/q$ in lowest terms, derive a contradiction.
 
 Q: Why is $\sqrt{2}$ irrational?
 A: Suppose $\sqrt{2} = p/q$ in lowest terms. Then $2q^2 = p^2$, so $p^2$ is even, hence $p$ is even, so $p = 2k$. Substituting gives $2q^2 = 4k^2$, so $q^2 = 2k^2$, which means $q$ is also even — contradicting the assumption that $p/q$ was in lowest terms. So no such $p, q$ exist. This is one of the earliest known proofs by contradiction in mathematics.
@@ -113,7 +116,8 @@ S:
 5. Solution set: $x\in\{-2, 8\}$.
 
 **EVALUATE**:
-- Geometrically, the equation $|x - 3| = 5$ asks: which points on the number line are exactly 5 units away from $3$? There are two such points: one 5 units to the right of 3 (that's 8) and one 5 units to the left of 3 (that's $-2$). ✓
-- If the equation had been $|x - 3| = 0$, there would be exactly one solution ($x = 3$, zero distance from $3$). If the right side had been negative, say $|x - 3| = -5$, there would be no solution, because absolute value is never negative. These three cases (two solutions, one solution, no solution) exhaust all possibilities for $|x - a| = c$.
-- The same pattern generalizes to absolute-value *inequalities*: $|x - 3| < 5$ describes the open interval $(-2, 8)$, and $|x - 3| > 5$ describes the two unbounded intervals $(-\infty, -2)\cup(8, \infty)$. Both use the same "distance from 3" interpretation but translate into a range rather than two points.
-- Recognizing $|x - a|$ as "distance from $a$" is a pattern you will apply repeatedly: in solving inequalities, in describing open/closed intervals, in defining limits in calculus, and in writing metric spaces in analysis.
+- Geometrically: which points are exactly 5 units from $3$? Two of them — at $3 + 5 = 8$ and $3 - 5 = -2$. ✓
+- Cases of $|x - a| = c$: $c > 0$ gives two solutions, $c = 0$ gives one, $c < 0$ gives none.
+
+Q: You see $|x - a| = c$ with $c > 0$. What's the solution structure?
+A: Two solutions: $x = a + c$ and $x = a - c$ (the two points at distance $c$ from $a$).

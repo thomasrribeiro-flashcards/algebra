@@ -15,7 +15,7 @@ A: Because if $a = 0$, the equation collapses to $b = 0$, which is either always
 ## 5.2 Solving a Linear Equation
 
 Q: What is the standard procedure for solving $ax + b = c$?
-A: Isolate $x$ by reversing operations, in reverse order: (1) subtract $b$ from both sides to get $ax = c - b$. (2) divide both sides by $a$ to get $x = (c - b)/a$. Each step preserves equality because the same operation is applied to both sides. This "undoing" approach extends to more complex equations: peel off operations from the outside in.
+A: Isolate $x$ by reversing operations: subtract $b$, then divide by $a$, giving $x = (c - b)/a$. The "peel from the outside in" idea extends to more complex equations.
 
 C: To solve $ax + b = c$, subtract $b$ from both sides and then divide by $a$, giving $x = [(c - b)/a]$.
 
@@ -99,10 +99,9 @@ S:
 5. $y$-intercept is $b = 1$.
 
 **EVALUATE**:
-- Check $(1, 4)$: $y = 3(1) + 1 = 4$. ✓
-- Check $(3, 10)$: $y = 3(3) + 1 = 10$. ✓
-- Both original points lie on the line — the equation is correct.
-- Geometric sanity check: slope $m = 3$ is positive, so the line rises from left to right; $y$-intercept $b = 1$ means it crosses the $y$-axis at $(0, 1)$. Graphing briefly in your head: starting at $(0, 1)$, moving right by 1 unit raises $y$ by 3, giving $(1, 4)$ ✓, and again gives $(2, 7)$, then $(3, 10)$ ✓.
-- Alternative: using point $(3, 10)$ in point-slope form gives $y - 10 = 3(x - 3)\Rightarrow y = 3x + 1$ — the same answer. Either point works; pick the one with nicer numbers.
-- Standard form would be $3x - y = -1$ or $3x - y + 1 = 0$. Slope-intercept form is more informative for graphing and for recognizing parallel/perpendicular relationships, which is why it is usually preferred as a final answer.
-- The same method generalizes to any line specified by two points: compute slope, use point-slope form, rearrange. The only "trick" is computing the slope correctly — including handling vertical lines ($x_1 = x_2$), where the slope is undefined and the line must be written as $x = x_1$ instead.
+- Check $(1, 4)$: $y = 3(1) + 1 = 4$ ✓; check $(3, 10)$: $y = 3(3) + 1 = 10$ ✓.
+- Either given point works in point-slope form; the result is the same.
+- Vertical lines ($x_1 = x_2$) are the only edge case: slope is undefined, write $x = x_1$.
+
+Q: You're given two points and asked for a line equation. What's the procedure?
+A: Slope $m = \Delta y / \Delta x$, then point-slope $y - y_1 = m(x - x_1)$, then rearrange.

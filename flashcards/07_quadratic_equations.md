@@ -34,6 +34,9 @@ A: It means rewriting a quadratic $ax^2 + bx + c$ as $a(x - h)^2 + k$ for some $
 
 ## 7.5 Deriving the Quadratic Formula
 
+Q: Before deriving the quadratic formula, predict: what's the key step that converts $ax^2 + bx + c = 0$ into something solvable by square roots?
+A: Completing the square — rewrite the $x^2$ and $x$ terms as $(x + b/(2a))^2$ minus a constant.
+
 Q: How is the quadratic formula derived by completing the square?
 A: Start with $ax^2 + bx + c = 0$. Divide by $a$: $x^2 + (b/a)x + c/a = 0$. Move constant: $x^2 + (b/a)x = -c/a$. Complete the square by adding $(b/2a)^2$ to both sides: $(x + b/(2a))^2 = -c/a + b^2/(4a^2) = (b^2 - 4ac)/(4a^2)$. Take square root: $x + b/(2a) = \pm\sqrt{b^2 - 4ac}/(2a)$. Solve: $x = (-b\pm\sqrt{b^2 - 4ac})/(2a)$. Done.
 
@@ -86,11 +89,9 @@ S:
 7. Solutions: $x\in\{3, 1/2\}$.
 
 **EVALUATE**:
-- Check $x_1 = 3$: $2(3)^2 - 7(3) + 3 = 18 - 21 + 3 = 0$. ✓
-- Check $x_2 = 1/2$: $2(1/2)^2 - 7(1/2) + 3 = 1/2 - 7/2 + 3 = (1 - 7)/2 + 3 = -3 + 3 = 0$. ✓
-- Vieta's formulas: sum $= x_1 + x_2 = 3 + 1/2 = 7/2$. Expected: $-b/a = 7/2$. ✓
-- Product $= x_1 x_2 = 3\cdot(1/2) = 3/2$. Expected: $c/a = 3/2$. ✓
-- Both Vieta checks match, giving independent confirmation that the roots are correct. This is a good practice for exam problems: after applying the quadratic formula, verify with Vieta's formulas in a few seconds.
-- Discriminant $\Delta = 25 > 0$: ✓ consistent with two distinct real roots. Had $\Delta$ come out to 0, the formula would have given a single repeated root; had it been negative, the solutions would have been complex.
-- This quadratic could also have been factored: $2x^2 - 7x + 3 = (2x - 1)(x - 3) = 0$, giving $x = 1/2$ or $x = 3$ directly. For "nice" rational-root quadratics, factoring is faster; for anything with irrational or complex roots, the quadratic formula is the reliable general method.
-- The quadratic formula should become a reflex — memorized, checked, and applied without hesitation. Along with factoring and completing the square, it is the complete toolkit for solving degree-2 equations and is the foundation for understanding parabolas, conic sections, and the quadratic approximation of arbitrary functions.
+- Check $x_1 = 3$: $2(9) - 21 + 3 = 0$ ✓. Check $x_2 = 1/2$: $1/2 - 7/2 + 3 = 0$ ✓.
+- Vieta: sum $= 7/2 = -b/a$ ✓; product $= 3/2 = c/a$ ✓.
+- Factoring shortcut: $(2x - 1)(x - 3) = 0$ gives the same roots faster when the quadratic is rational.
+
+Q: You see a quadratic with integer coefficients. Should you reach for the quadratic formula or factoring first?
+A: Try factoring first if it looks rational ($\Delta$ is a perfect square); otherwise quadratic formula.
